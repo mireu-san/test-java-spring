@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sandbox?createDatabaseIfNotExist=true&characterEncoding=UTF-8&characterSetResults=UTF-8
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update # 처음 생성시 create로 변경. 이 후, none 도 가능.
+    generate-ddl: true
+    show-sql: true
